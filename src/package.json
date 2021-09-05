@@ -1,0 +1,50 @@
+{
+  "name": "template-express-service",
+  "version": "1.0.100",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start-gendoc": "node helpers/swaggerHelper.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node helpers/swaggerHelper.js && nodemon server.js",
+    "start": "set NODE_ENV=production & nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.2",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "oas3-tools": "^2.2.3",
+    "otp-generator": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "swagger-autogen": "^2.8.1",
+    "swagger-jsdoc": "^5.0.1",
+    "swagger-ui-express": "^4.1.6",
+    "twilio": "^3.62.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "react": "^17.0.2"
+  }
+}
